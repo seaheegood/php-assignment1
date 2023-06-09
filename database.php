@@ -4,6 +4,8 @@ class Database{
     function __construct(){
         $this->connect_db(); // -> referencing the function
     }
+
+    // connect to mysql
     public function connect_db(){
         $this->connection = mysqli_connect('172.31.22.43', 'Seahee200530585', 'isuvIFGUxI', 'Seahee200530585');
         if(mysqli_connect_error()){
@@ -20,7 +22,7 @@ class Database{
         }
     }
     public function read($id=null){
-        $sql = "SELECT * FROM pizzaOrder"; // * Means select all basically
+        $sql = "SELECT * FROM pizzaOrder"; // Select all from pizzaOrder database to show
         if($id){
             $sql .= " WHERE id=$id";
         }
@@ -28,7 +30,7 @@ class Database{
         return $res;
     }
     public function sanitize($var){
-        $return = mysqli_real_escape_string($this->connection,$var);
+        $return = mysqli_real_escape_string($this->connection,$var); // return
         return $return;
     }
 }

@@ -9,6 +9,7 @@ CREATE TABLE pizzaOrder (
     primary key (id)
 );
 
+-- sample data
 INSERT INTO pizzaOrder(pizza, fname, lname, phonenum, email, address)
 VALUES
     ('Cheese', 'Sehee', 'Hong', '333-333-3333', 'sehee@email.ca', '123 Ave Street');

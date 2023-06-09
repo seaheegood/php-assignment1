@@ -40,6 +40,7 @@ $res = $database->read();
 
 <div class="container">
     <div class="row">
+        <!-- make a table to show the data -->
         <table class="table">
             <tr>
                 <th>#</th>
@@ -49,6 +50,7 @@ $res = $database->read();
                 <th>Email</th>
                 <th>Address</th>
             </tr>
+            <!-- from database -->
             <?php
             while($r = mysqli_fetch_assoc($res)){
                 ?>

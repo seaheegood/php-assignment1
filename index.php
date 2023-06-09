@@ -39,16 +39,17 @@
         <!-- validate the inputs -->
         <?php
         if($_SERVER[REQUEST_METHOD] == "POST"){
-            // Create our variables
+            // Create variables
             $fname    = trim($_POST['fname']);
             $lname    = trim($_POST['lname']);
             $phonenum = trim($_POST['phonenum']);
             $email    = trim($_POST['email']);
             $address  = trim($_POST['address']);
 
-            // add our error variable
+            // add error variable
             $error = '';
-            // now for our validation
+
+            // validation
             if(empty($fname)){
                 $error = "<p>first name needed</p>";
             }else if(empty($lname)){
