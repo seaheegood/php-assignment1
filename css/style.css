@@ -1,0 +1,25 @@
+body {
+  background-image: url("../img/pizza-slice-seamless-pattern-background_573652-1142.jpeg");
+  background-size: cotain;
+}
+
+.container {
+  background-color: #fff;
+}
+
+label {
+  font-size: 1.7em;
+}
+
+.form-row{
+  padding: 5%;
+}
+.form-row h2{
+  font-size: 2.5em;
+}
+.form-row .form-group{
+  margin: 15px 0px;
+}
+.submit-message{
+  text-align: center;
+}
